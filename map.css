@@ -1,32 +1,41 @@
 /* Simsun&NSimSun */
-@font-face { font-family: Simsun; src: local('Noto Sans S Chinese Regular')}
-@font-face { font-family: Simsun; font-weight: bold; src: local('Noto Sans S Chinese Bold')}
-@font-face { font-family: Simsun; font-weight: lighter; src: local('Noto Sans S Chinese Light')}
-@font-face { font-family: NSimsun; src: local('Noto Sans S Chinese Regular')}
-@font-face { font-family: NSimsun; font-weight: bold; src: local('Noto Sans S Chinese Bold')}
-@font-face { font-family: NSimsun; font-weight: lighter; src: local('Noto Sans S Chinese Light')}
+@font-face { font-family: Simsun; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: Simsun; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: Simsun; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
+@font-face { font-family: NSimsun; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: NSimsun; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: NSimsun; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
+@font-face { font-family: 宋体; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: 宋体; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: 宋体; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
+@font-face { font-family: 新宋体; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: 新宋体; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: 新宋体; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
 
 /* Microsoft Yahei */
-@font-face { font-family: Microsoft Yahei; src: local('Noto Sans S Chinese Regular')}
-@font-face { font-family: Microsoft Yahei; font-weight: bold; src: local('Noto Sans S Chinese Bold')}
-@font-face { font-family: Microsoft Yahei; font-weight: lighter; src: local('Noto Sans S Chinese Light')}
+@font-face { font-family: Microsoft Yahei; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: Microsoft Yahei; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: Microsoft Yahei; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
+@font-face { font-family: 微软雅黑; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: 微软雅黑; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: 微软雅黑; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
 
 /* Microsoft JhengHei */
-@font-face { font-family: Microsoft JhengHei; src: local('Noto Sans T Chinese Regular')}
-@font-face { font-family: Microsoft JhengHei; font-weight: bold; src: local('Noto Sans T Chinese Bold')}
-@font-face { font-family: Microsoft JhengHei; font-weight: lighter; src: local('Noto Sans T Chinese Light')}
+@font-face { font-family: Microsoft JhengHei; src: local('Noto Sans CJK TC Regular')}
+@font-face { font-family: Microsoft JhengHei; font-weight: bold; src: local('Noto Sans CJK TC Bold')}
+@font-face { font-family: Microsoft JhengHei; font-weight: lighter; src: local('Noto Sans CJK TC Light')}
 
 /* Meiryo */
-@font-face { font-family: Meiryo; src: local('Noto Sans Japanese Regular')}
-@font-face { font-family: Meiryo; font-weight: bold; src: local('Noto Sans Japanese Bold')}
-@font-face { font-family: Meiryo; font-weight: lighter; src: local('Noto Sans Japanese Light')}
+@font-face { font-family: Meiryo; src: local('Noto Sans CJK JP Regular')}
+@font-face { font-family: Meiryo; font-weight: bold; src: local('Noto Sans CJK JP Bold')}
+@font-face { font-family: Meiryo; font-weight: lighter; src: local('Noto Sans CJK JP Light')}
 
 /* arial */
-@font-face { font-family: arial; src: local('Noto Sans S Chinese Regular')}
-@font-face { font-family: arial; font-weight: bold; src: local('Noto Sans S Chinese Bold')}
-@font-face { font-family: arial; font-weight: lighter; src: local('Noto Sans S Chinese Light')}
+@font-face { font-family: arial; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: arial; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: arial; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
 
 /* sans-serif */
-@font-face { font-family: sans-serif; src: local('Noto Sans S Chinese Regular')}
-@font-face { font-family: sans-serif; font-weight: bold; src: local('Noto Sans S Chinese Bold')}
-@font-face { font-family: sans-serif; font-weight: lighter; src: local('Noto Sans S Chinese Light')}
+@font-face { font-family: sans-serif; src: local('Noto Sans CJK SC Regular')}
+@font-face { font-family: sans-serif; font-weight: bold; src: local('Noto Sans CJK SC Bold')}
+@font-face { font-family: sans-serif; font-weight: lighter; src: local('Noto Sans CJK SC Light')}

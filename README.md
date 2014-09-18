@@ -11,4 +11,5 @@ Created for Opera 24.0.1558.53 (Chrome/37.0.2062.94), tested on Opera Only
 
 Changelog:
 
+v1.3 Update font name to Noto Sans CJK version 1.001
 v1.2 First release on Github, tested with Opera 24.0.1558.61 (Chrome/37.0.2062.120)
