@@ -1,0 +1,10 @@
+{
+   "content_scripts": [ {
+      "css": ["map.css"],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Map common fonts to Noto Sans",
+   "name": "Map2NotoSans",
+   "version": "1.2",
+   "manifest_version": 2
+}
