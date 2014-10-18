@@ -1,0 +1,56 @@
+/* Define monospace */
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+
+/* Force monospace */
+.source-code {
+	font-size: 22px !important;
+	font-family: monospace !important;
+	line-height: 1.5 !important;
+}

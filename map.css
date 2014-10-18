@@ -1,41 +1,390 @@
-/* Simsun&NSimSun */
-@font-face { font-family: Simsun; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: Simsun; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: Simsun; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-@font-face { font-family: NSimsun; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: NSimsun; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: NSimsun; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-@font-face { font-family: 宋体; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: 宋体; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: 宋体; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-@font-face { font-family: 新宋体; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: 新宋体; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: 新宋体; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-
-/* Microsoft Yahei */
-@font-face { font-family: Microsoft Yahei; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: Microsoft Yahei; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: Microsoft Yahei; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-@font-face { font-family: 微软雅黑; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: 微软雅黑; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: 微软雅黑; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-
-/* Microsoft JhengHei */
-@font-face { font-family: Microsoft JhengHei; src: local('Noto Sans CJK TC Regular')}
-@font-face { font-family: Microsoft JhengHei; font-weight: bold; src: local('Noto Sans CJK TC Medium')}
-@font-face { font-family: Microsoft JhengHei; font-weight: lighter; src: local('Noto Sans CJK TC Light')}
-
-/* Meiryo */
-@font-face { font-family: Meiryo; src: local('Noto Sans CJK JP Regular')}
-@font-face { font-family: Meiryo; font-weight: bold; src: local('Noto Sans CJK JP Medium')}
-@font-face { font-family: Meiryo; font-weight: lighter; src: local('Noto Sans CJK JP Light')}
-
-/* arial */
-@font-face { font-family: arial; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: arial; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: arial; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
-
-/* sans-serif */
-@font-face { font-family: sans-serif; src: local('Noto Sans CJK SC Regular')}
-@font-face { font-family: sans-serif; font-weight: bold; src: local('Noto Sans CJK SC Medium')}
-@font-face { font-family: sans-serif; font-weight: lighter; src: local('Noto Sans CJK SC Light')}
+/* Replace SimSun */
+@font-face {
+  font-family: Simsun;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: Simsun;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: Simsun;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: Simsun;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: NSimsun;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: NSimsun;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: NSimsun;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: NSimsun;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '宋体';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '宋体';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '宋体';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '宋体';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '新宋体';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '新宋体';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '新宋体';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '新宋体';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+/* Replace MSYH, MSJH, Meiryo */
+@font-face {
+  font-family: 'Microsoft YaHei';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: 'Meiryo';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: 'Meiryo';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: 'Meiryo';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: 'Meiryo';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微软雅黑';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '微软雅黑';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '微软雅黑';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微软雅黑';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微软雅黑 Bold';
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微软雅黑 Bold';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微软雅黑 Bold';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微软雅黑 Bold';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+/* Fallback common fonts */
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+/* Replace sans-serif */
+@font-face {
+  font-family: sans-serif;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: sans-serif;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: sans-serif;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+/* Replace monospace */
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}
+/* Replace fonts do not exist on Windows */
+@font-face {
+  font-family: STHeiti;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: STHeiti;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Regular');
+}
+@font-face {
+  font-family: STHeiti;
+  font-weight: bold;
+  src: local('Noto Sans CJK SC Medium');
+}
+@font-face {
+  font-family: STHeiti;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Noto Sans CJK SC Medium');
+}

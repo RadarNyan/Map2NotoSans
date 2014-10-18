@@ -1,10 +1,13 @@
 {
    "content_scripts": [ {
       "css": ["map.css"],
-      "matches": [ "http://*/*", "https://*/*" ]
+      "matches": [ "http://*/*", "https://*/*" ],
+      "match_about_blank": true,
+      "all_frames": true
    } ],
+   "devtools_page": "devtools.html",
    "description": "Map common fonts to Noto Sans",
    "name": "Map2NotoSans",
-   "version": "1.3",
+   "version": "2.0",
    "manifest_version": 2
 }

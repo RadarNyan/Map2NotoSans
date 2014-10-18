@@ -1,0 +1,80 @@
+﻿// Define font face
+
+@sc_font      : 'Noto Sans CJK SC Regular' ;
+@sc_font_bold : 'Noto Sans CJK SC Medium'  ;
+@tc_font      : 'Noto Sans CJK SC Regular' ;
+@tc_font_bold : 'Noto Sans CJK SC Medium'  ;
+@jp_font      : 'Noto Sans CJK SC Regular' ;
+@jp_font_bold : 'Noto Sans CJK SC Medium'  ;
+@mono_font      : Consolas ;
+@mono_font_bold : Consolas ;
+// @mono_font      : "M+ 1mn regular" ;
+// @mono_font_bold : "M+ 1mn medium"  ;
+
+// Define Unicode Range
+
+@range_latin : U+0000-2E7F ;
+@range_cjk   : U+2E80-FFFF ;
+
+// Define function
+
+.replace-font(@font, @font1, @font1_bold){
+    @font-face { font-family: @font; src: local(@font1)}
+    @font-face { font-family: @font; font-style: italic; src: local(@font1)}
+    @font-face { font-family: @font; font-weight: bold; src: local(@font1_bold)}
+    @font-face { font-family: @font; font-weight: bold; font-style: italic; src: local(@font1_bold)}
+}
+
+.combine-font(@font, @font1, @font1_bold, @font1_range, @font2, @font2_bold, @font2_range){
+    @font-face { font-family: @font; unicode-range: @font1_range; src: local(@font1)}
+    @font-face { font-family: @font; unicode-range: @font1_range; font-style: italic; src: local(@font1)}
+    @font-face { font-family: @font; unicode-range: @font1_range; font-weight: bold; src: local(@font1_bold)}
+    @font-face { font-family: @font; unicode-range: @font1_range; font-weight: bold; font-style: italic; src: local(@font1_bold)}
+    @font-face { font-family: @font; unicode-range: @font2_range; src: local(@font2)}
+    @font-face { font-family: @font; unicode-range: @font2_range; font-style: italic; src: local(@font2)}
+    @font-face { font-family: @font; unicode-range: @font2_range; font-weight: bold; src: local(@font2_bold)}
+    @font-face { font-family: @font; unicode-range: @font2_range; font-weight: bold; font-style: italic; src: local(@font2_bold)}
+}
+
+.replace(@font){    // Replace @font with @sc_font
+    .replace-font(@font, @sc_font, @sc_font_bold);
+}
+
+.replace_tc(@font){ // Replace @font with @tc_font
+    .replace-font(@font, @tc_font, @tc_font_bold);
+}
+
+.replace_jp(@font){ // Replace @font with @jp_font
+    .replace-font(@font, @jp_font, @jp_font_bold);
+}
+
+.fallback(@font){ // Use latin part of @font and cjk part of @sc_font
+    .combine-font(@font, @font, @font, @range_latin, @sc_font, @sc_font_bold, @range_cjk);
+}
+
+// Call functions
+
+/* Replace SimSun */
+.replace(Simsun);
+.replace(NSimsun);
+.replace('宋体');
+.replace('新宋体');
+
+/* Replace MSYH, MSJH, Meiryo */
+.replace('Microsoft YaHei');
+.replace_tc('Microsoft JhengHei');
+.replace_jp('Meiryo');
+.replace('微软雅黑');
+.replace-font('微软雅黑 Bold', @sc_font_bold, @sc_font_bold); // Special fix, SC only
+.replace_tc('微軟正黑體');
+
+/* Fallback common fonts */
+.fallback(arial);
+.fallback(consolas);
+// .combine-font(consolas, @mono_font, @mono_font_bold, @range_latin, @sc_font, @sc_font_bold, @range_cjk);
+/* Replace sans-serif */
+.replace(sans-serif);
+/* Replace monospace */
+.combine-font(monospace, @mono_font, @mono_font_bold, @range_latin, @sc_font, @sc_font_bold, @range_cjk);
+/* Replace fonts do not exist on Windows */
+.replace(STHeiti);
